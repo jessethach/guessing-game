@@ -11,3 +11,5 @@ console.log('Question 3 response was ' + question3);
 alert('Your answer to Question 1 was ' + question1);
 alert('Your answer to Question 2 was ' + question2);
 alert('Your answer to Question 3 was ' + question3);
+
+// here are some changes....
