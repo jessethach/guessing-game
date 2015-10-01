@@ -6,10 +6,13 @@ var question3 = document.getElementById("third");
 var correctAnswers = 0;
 
 var userName = prompt("What is your name?");
+	console.log('This is the user\'s name ' + userName);
 
 function firstquestion()	{
 	var question1 = prompt('Is Jesse from Seattle?');
 		alert('Your answer to Question 1 was ' + question1 + '.');
+		console.log('Question 1 response was ' + question1);
+		console.log('What I am testing in my "if" condition ' + question1.toUpperCase());
 	if (question1.toUpperCase() === 'YES' || question1.toUpperCase() === 'Y') {
 		first.innerHTML='Correct! Jesse was born and raised in Seattle.';
 		correctAnswers++;
@@ -21,6 +24,8 @@ function firstquestion()	{
 function secondquestion()	{
 	var question2 = prompt('Can Jesse drive a tractor?');
 		alert('Your answer to Question 2 was ' + question2 + '.');
+		console.log('Question 2 response was ' + question2);
+		console.log('What I am testing in my "if" condition ' + question2.toUpperCase());
 	if (question2.toUpperCase() === 'NO' || question2.toUpperCase() === 'N') {
 		second.innerHTML='You are right! Jesse would most likely crash a tractor.';
 		correctAnswers++;
@@ -32,6 +37,8 @@ function secondquestion()	{
 function thirdquestion()	{
 	var question3 = prompt('Does Jesse Like soccer?');
 		alert('Your answer to Question 3 was ' + question3 + '.');
+		console.log('Question 3 response was ' + question3);
+		console.log('What I am testing in my "if" condition ' + question3.toUpperCase());
 	if (question3.toUpperCase() === 'YES' || question3.toUpperCase() === 'Y') {
 		third.innerHTML='Right on! Yes, Jesse loves soccer.';
 		correctAnswers++;
@@ -52,15 +59,4 @@ firstquestion();
 secondquestion();
 thirdquestion();
 summary();
-
-console.log('This is the user\'s name ' + userName);
-console.log('Question 1 response was ' + question1);
-console.log('What I am testing in my "if" condition ' + question1.toUpperCase());
-console.log('Question 2 response was ' + question2);
-console.log('What I am testing in my "if" condition ' + question2.toUpperCase());
-console.log('Question 3 response was ' + question3);
-console.log('What I am testing in my "if" condition ' + question3.toUpperCase());
-
-
-
 
