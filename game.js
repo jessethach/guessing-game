@@ -1,6 +1,9 @@
 var question1 = document.getElementById("first");
 var question2 = document.getElementById("second");
 var question3 = document.getElementById("third");
+var pic1 = document.getElementById("pic1");
+var pic2 = document.getElementById("pic2");
+var pic3 = document.getElementById("pic3");
 var correctAnswers = 0;
 
 var userName = prompt("What is your name?");
@@ -15,6 +18,7 @@ function firstquestion()	{
 		console.log('What I am testing in my "if" condition ' + question1.toUpperCase());
 	if (question1.toUpperCase() === answers[0] || question1.toUpperCase() === answers[1]) {
 		first.innerHTML='Correct! Jesse was born and raised in Seattle.';
+		pic1.innerHTML = '<img src="img/cool-dog.jpg" width="200">';
 		correctAnswers++;
 	} else {
 		first.innerHTML='Sorry, incorrect. Jesse is and always will be a Seattleite.';
@@ -27,6 +31,7 @@ function secondquestion()	{
 		console.log('What I am testing in my "if" condition ' + question2.toUpperCase());
 	if (question2.toUpperCase() === answers[2] || question2.toUpperCase() === answers[3]) {
 		second.innerHTML='You are right! Jesse would most likely crash a tractor.';
+		pic2.innerHTML = '<img src="img/cool-dog.jpg" width="200">';		
 		correctAnswers++;
 	} else {
 		second.innerHTML='Wrong! Jesse would be able to CRASH a tractor most likely';
@@ -39,6 +44,7 @@ function thirdquestion()	{
 		console.log('What I am testing in my "if" condition ' + question3.toUpperCase());
 	if (question3.toUpperCase() === answers[0] || question3.toUpperCase() === answers[1]) {
 		third.innerHTML='Right on! Yes, Jesse loves soccer.';
+		pic3.innerHTML = '<img src="img/cool-dog.jpg" width="200">';
 		correctAnswers++;
 	} else {
 		third.innerHTML='You have never been more wrong in your life. Jesse loves soccer.';
@@ -54,7 +60,7 @@ function summary()	{
 }
 
 firstquestion();
-secondquestion();
-thirdquestion();
+window.setTimeout(secondquestion, 1000);
+window.setTimeout(thirdquestion, 1000);
 summary();
 
