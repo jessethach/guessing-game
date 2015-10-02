@@ -1,5 +1,3 @@
-
-
 var question1 = document.getElementById("first");
 var question2 = document.getElementById("second");
 var question3 = document.getElementById("third");
@@ -8,12 +6,14 @@ var correctAnswers = 0;
 var userName = prompt("What is your name?");
 	console.log('This is the user\'s name ' + userName);
 
+var questions = ['Is Jesse from Seattle?', 'Can Jesse drive a tractor?', 'Does Jesse Like soccer?'];
+var answers = ['YES', 'Y', 'NO', 'N']
+
 function firstquestion()	{
-	var question1 = prompt('Is Jesse from Seattle?');
-		alert('Your answer to Question 1 was ' + question1 + '.');
+	var question1 = prompt(questions[0]);
 		console.log('Question 1 response was ' + question1);
 		console.log('What I am testing in my "if" condition ' + question1.toUpperCase());
-	if (question1.toUpperCase() === 'YES' || question1.toUpperCase() === 'Y') {
+	if (question1.toUpperCase() === answers[0] || question1.toUpperCase() === answers[1]) {
 		first.innerHTML='Correct! Jesse was born and raised in Seattle.';
 		correctAnswers++;
 	} else {
@@ -22,11 +22,10 @@ function firstquestion()	{
 }
 
 function secondquestion()	{
-	var question2 = prompt('Can Jesse drive a tractor?');
-		alert('Your answer to Question 2 was ' + question2 + '.');
+	var question2 = prompt(questions[1]);
 		console.log('Question 2 response was ' + question2);
 		console.log('What I am testing in my "if" condition ' + question2.toUpperCase());
-	if (question2.toUpperCase() === 'NO' || question2.toUpperCase() === 'N') {
+	if (question2.toUpperCase() === answers[2] || question2.toUpperCase() === answers[3]) {
 		second.innerHTML='You are right! Jesse would most likely crash a tractor.';
 		correctAnswers++;
 	} else {
@@ -35,11 +34,10 @@ function secondquestion()	{
 }
 
 function thirdquestion()	{
-	var question3 = prompt('Does Jesse Like soccer?');
-		alert('Your answer to Question 3 was ' + question3 + '.');
+	var question3 = prompt(questions[2]);
 		console.log('Question 3 response was ' + question3);
 		console.log('What I am testing in my "if" condition ' + question3.toUpperCase());
-	if (question3.toUpperCase() === 'YES' || question3.toUpperCase() === 'Y') {
+	if (question3.toUpperCase() === answers[0] || question3.toUpperCase() === answers[1]) {
 		third.innerHTML='Right on! Yes, Jesse loves soccer.';
 		correctAnswers++;
 	} else {
