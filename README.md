@@ -1,8 +1,7 @@
-Driver: Jared Stratton
+Driver: Pat Yau
 Navigator: Jesse Thach
 
-October 1 paired programming project
+10-02-15
 We are awesome. End of discussion.
 
-Also we moved alerts to html document, moved logic to functions.
-
+Pair programming! We did cool stuff with the cool dog!!
