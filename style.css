@@ -1,0 +1,12 @@
+body {
+	font-family: Lato, Arial, Verdana;
+	background-color: #869dad;
+}
+
+.correct {
+	color: green;
+}
+
+.incorrect {
+	color: red;
+}

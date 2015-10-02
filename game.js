@@ -4,6 +4,12 @@ var question3 = document.getElementById("third");
 var pic1 = document.getElementById("pic1");
 var pic2 = document.getElementById("pic2");
 var pic3 = document.getElementById("pic3");
+var first_g = document.getElementById("first_g");
+var first_r = document.getElementById("first_r");
+var second_g = document.getElementById("second_g");
+var second_r = document.getElementById("second_r");
+var third_g = document.getElementById("third_g");
+var third_r = document.getElementById("third_r");
 var correctAnswers = 0;
 
 var userName = prompt("What is your name?");
@@ -17,11 +23,11 @@ function firstquestion()	{
 		console.log('Question 1 response was ' + question1);
 		console.log('What I am testing in my "if" condition ' + question1.toUpperCase());
 	if (question1.toUpperCase() === answers[0] || question1.toUpperCase() === answers[1]) {
-		first.innerHTML='Correct! Jesse was born and raised in Seattle.';
+		first_g.innerHTML='Correct! Jesse was born and raised in Seattle.';
 		pic1.innerHTML = '<img src="img/cool-dog.jpg" width="200">';
 		correctAnswers++;
 	} else {
-		first.innerHTML='Sorry, incorrect. Jesse is and always will be a Seattleite.';
+		first_r.innerHTML='Sorry, incorrect. Jesse is and always will be a Seattleite.';
 	}
 }
 
@@ -30,11 +36,11 @@ function secondquestion()	{
 		console.log('Question 2 response was ' + question2);
 		console.log('What I am testing in my "if" condition ' + question2.toUpperCase());
 	if (question2.toUpperCase() === answers[2] || question2.toUpperCase() === answers[3]) {
-		second.innerHTML='You are right! Jesse would most likely crash a tractor.';
+		second_g.innerHTML='You are right! Jesse would most likely crash a tractor.';
 		pic2.innerHTML = '<img src="img/cool-dog.jpg" width="200">';		
 		correctAnswers++;
 	} else {
-		second.innerHTML='Wrong! Jesse would be able to CRASH a tractor most likely';
+		second_r.innerHTML='Wrong! Jesse would be able to CRASH a tractor most likely';
 	}
 }
 
@@ -43,11 +49,11 @@ function thirdquestion()	{
 		console.log('Question 3 response was ' + question3);
 		console.log('What I am testing in my "if" condition ' + question3.toUpperCase());
 	if (question3.toUpperCase() === answers[0] || question3.toUpperCase() === answers[1]) {
-		third.innerHTML='Right on! Yes, Jesse loves soccer.';
+		third_g.innerHTML='Right on! Yes, Jesse loves soccer.';
 		pic3.innerHTML = '<img src="img/cool-dog.jpg" width="200">';
 		correctAnswers++;
 	} else {
-		third.innerHTML='You have never been more wrong in your life. Jesse loves soccer.';
+		third_r.innerHTML='You have never been more wrong in your life. Jesse loves soccer.';
 	}
 }
 
