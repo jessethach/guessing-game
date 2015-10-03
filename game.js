@@ -68,5 +68,5 @@ function summary()	{
 firstquestion();
 window.setTimeout(secondquestion, 1000);
 window.setTimeout(thirdquestion, 1000);
-summary();
+window.setTimeout(summary, 1000);
 
